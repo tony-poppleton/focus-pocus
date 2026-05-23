@@ -1,5 +1,5 @@
 [package]
-name = "cracknaphobia-claude"
+name = "focus-pocus"
 version = "0.1.0"
 edition = "2021"
 
@@ -17,4 +17,7 @@ windows-sys = { version = "0.59", features = [
 
 [profile.release]
 opt-level = 3
-lto = "thin"
+lto = "fat"           # Performs maximum global optimizations across all crates
+codegen-units = 1     # Optimizes the entire binary as a single unit (reduces size)
+strip = true          # Removes ALL symbols and debug info completely
+panic = "abort"       # Eliminates the heavy stack-unwinding code

@@ -319,15 +319,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "cracknaphobia-claude"
-version = "0.1.0"
-dependencies = [
- "eframe",
- "egui",
- "windows-sys 0.59.0",
-]
-
-[[package]]
 name = "crc32fast"
 version = "1.5.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -572,6 +563,15 @@ checksum = "843fba2746e448b37e26a819579957415c8cef339bf08564fe8b7ddbd959573c"
 dependencies = [
  "crc32fast",
  "miniz_oxide",
+]
+
+[[package]]
+name = "focus-pocus"
+version = "0.1.0"
+dependencies = [
+ "eframe",
+ "egui",
+ "windows-sys 0.59.0",
 ]
 
 [[package]]
